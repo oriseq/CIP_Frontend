@@ -1,0 +1,45 @@
+/** 表格数据示例 */
+export const tableDataDemo = {
+  records: [
+    {
+      projectName: '所有',
+      time: '2025-01',
+      total_num: 30,
+      total_price: 307.5,
+      A1_num: 6,
+      A1_price: 97.5,
+      A3_num: 24,
+      A3_price: 210,
+    },
+    {
+      projectName: '促卵泡成熟激素（FSH）',
+      time: '2025-01',
+      total_num: 10,
+      total_price: 102.5,
+      A1_num: 2,
+      A1_price: 32.5,
+      A3_num: 8,
+      A3_price: 70,
+    },
+    {
+      projectName: '促黄体生成素（LH）',
+      time: '2025-01',
+      total_num: 10,
+      total_price: 102.5,
+      A1_num: 2,
+      A1_price: 32.5,
+      A3_num: 8,
+      A3_price: 70,
+    },
+    {
+      projectName: '肝功7项(AST、ALT、AST/ALT、TP、ALB、GLB、GGT、A/G、LDH、ALP)',
+      time: '2025-01',
+      total_num: 10,
+      total_price: 102.5,
+      A1_num: 2,
+      A1_price: 32.5,
+      A3_num: 8,
+      A3_price: 70,
+    },
+  ],
+};
