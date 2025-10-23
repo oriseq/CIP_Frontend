@@ -1,181 +1,75 @@
-# CIP前端
 
-<div align="center"> <a href="https://github.com/anncwb/vue-vben-admin"> <img alt="VbenAdmin Logo" width="200" height="200" src="https://anncwb.github.io/anncwb/images/logo.png"> </a> <br> <br>
 
-[![license](https://img.shields.io/github/license/anncwb/vue-vben-admin.svg)](LICENSE)
+[English Version](./README-en.md)
 
-<h1>Vue vben admin</h1>
-</div>
+<h1 align="center">
+  <br>
+  <a href="https://CIP.xxx/" alt="logo" ><img src="./assets/logo-2.svg" width="150"/></a>
+</h1>
 
-**English** | [中文](./README.zh-CN.md)
-
-## Introduction
-
-Vue Vben Admin is a free and open source middle platform/back-end template. Using the latest `vue3`, `vite4`, `TypeScript` and other mainstream technology, Vben is the out-of-the-box front-end solution for both production and learning purpose.
-
-## Features
-
-- **State-of-art Techinical Stack**：Using the latest and popular front-end technology such as Vue3/vite2
-- **TypeScript**: Application-level JavaScript language
-- **Theming**: Configurable themes
-- **International**：Built-in i18n support
-- **Response Mock**: Built-in response mock ability
-- **Authority**: Built-in permission system based on dynamic routes.
-- **Component**: Extracted and encapsulated components for various scenarios.
-
-## Preview
-
-- [vue-vben-admin](https://vben.vvbin.cn/) - Full version (Chinese)
-- [vue-vben-admin-gh-pages](https://anncwb.github.io/vue-vben-admin/) - Full version (github hosted)
-- [vben-admin-thin-next](https://vben.vvbin.cn/thin/next/) - Simplified Version (Chinese)
-- [vben-admin-thin-gh-pages](https://anncwb.github.io/vben-admin-thin-next/) -Simplified Version (github hosted)
-
-Test account: vben/123456
+<h4 align="center">临床检验信息管理系统</h4>
 
 <p align="center">
-    <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview1.png">
-    <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview2.png">
-    <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview3.png">
+  <a href="https://CIP.org">主页</a> •
+  <a href="https://demo.CIP.org">演示</a> •
+  <a href="https://github.com/CIP/CIP/discussions">讨论</a> •
+  <a href="https://docs.CIP.org">文档</a> 
+
+<!-- <a href="https://github.com/CIP/CIP/releases">下载</a> • -->
 </p>
 
-### Use Gitpod
 
-Open the project in Gitpod (free online dev environment for GitHub) and start coding immediately.
+![Screenshot](./assets/HomePage.png)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/anncwb/vue-vben-admin)
+## :sparkles: 特性
 
-## Documentation
+- :test_tube: 样本信息管理，完整的送检样本信息录入与管理，支持样本状态实时跟踪、历史记录查询和相关文件管理，确保检验流程规范化
+- :bar_chart: 检测项目管理，全面管理样本检测项目的状态和结果数据，支持与合作单位的项目协作，实现检测流程的标准化管理
+- :hospital: 项目库管理，统一管理所有可检测项目及与其他单位的合作项目，建立完善的项目数据库，支持项目信息的快速检索
+- :moneybag: 账单统计系统，智能统计送检项目的账单明细并提供可视化展示，支持多维度的费用分析和财务报表查看
+- :package: 套餐外送管理，灵活配置检测项目套餐，高效管理外送单位合作关系，优化检测资源配置和成本控制
+- :busts_in_silhouette: ​用户权限体系，完善的用户注册、登录、密码找回功能，支持用户信息管理、权限分配和用户组划分，确保系统安全
+- :bell: 消息通知中心，实时消息推送和通知管理系统，及时传达重要信息，提升团队协作效率和工作响应速度
+- :lock: 数据安全保障，多层次的数据安全防护机制，确保临床检验数据的安全性、完整性和隐私保护，符合医疗行业标准
+- :globe_with_meridians: 网站管理面板，支持个性化配置站点设置和登录页面的标题文本、注册或登录的功能
 
-[Document](https://doc.vvbin.cn/)
+## :hammer_and_wrench: 启动和部署
 
-## Preparation
+你可以参考 [部署](.../docs/deploy/) 进行启动和部署。
 
-- [node](http://nodejs.org/) and [git](https://git-scm.com/) - Project development environment
-- [Vite](https://vitejs.dev/) - Familiar with vite features
-- [Vue3](https://v3.vuejs.org/) - Familiar with Vue basic syntax
-- [TypeScript](https://www.typescriptlang.org/) - Familiar with the basic syntax of `TypeScript`
-- [Es6+](http://es6.ruanyifeng.com/) - Familiar with es6 basic syntax
-- [Vue-Router-Next](https://next.router.vuejs.org/) - Familiar with the basic use of vue-router
-- [Ant-Design-Vue](https://antdv.com/docs/vue/introduce-cn/) - ui basic use
-- [Mock.js](https://github.com/nuysoft/Mock) - mockjs basic syntax
+## :eyes: 演示
 
-## Install and use
+[演示地址](https://demo.CIP.org)
 
-- Get the project code
+默认账号密码：admin/12345678
 
-```bash
-git clone https://github.com/vbenjs/vue-vben-admin.git
-```
+## :alembic: 技术栈
 
-- Install dependencies
+- **后端**： [JDK17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) + [Spring Boot 3](https://docs.springframework.org.cn/spring-framework/reference/spring-projects.html) + [Redis](https://redis.io/) + [MySQL](https://www.mysql.com/)
+- **前端**： [Vue](https://cn.vuejs.org/) + [Typescript](https://www.tslang.cn/) + [Vben-Admin](https://doc.vvbin.cn/guide/introduction.html) + [Ant-Design-Vue](https://www.antdv.com/docs/vue/introduce-cn)
 
-```bash
-cd vue-vben-admin
+## :raising_hand: 代码贡献
 
-pnpm install
+我们欢迎社区贡献！请遵循以下步骤：
 
-```
+1. Fork 本项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 创建 Pull Request
 
-- run
+## :triangular_ruler: 开发规范
+- 遵循编码规范
+- 编写单元测试
+- 更新相关文档
+- 确保代码通过测试
 
-```bash
-pnpm serve
-```
+## :scroll: 许可证
 
-- build
+GPL V3
 
-```bash
-pnpm build
-```
+## :loudspeaker: 联系方式
 
-- docker
-
-### The dockerFile is located in the project root directory and supports differential deployment
-
-#### build image
-
-```bash
-docker build -t vue-vben-admin .
-```
-
-#### Use environment variables to achieve differentiated container deployment. Specify service endpoint by assigning `VG_BASE_URL`. In the following example, `http://localhost:3333` is used as the back-end service address and the container is mapped to port `6666`:
-
-```bash
-docker run --name vue-vben-admin -d -p 6666:80  -e VG_BASE_URL=http://localhost:3333 vue-vben-admin
-```
-
-Then you can navigate to `http://localhost:6666`
-
-## Change Log
-
-[CHANGELOG](./CHANGELOG.zh_CN.md)
-
-## Project
-
-- [vue-vben-admin](https://github.com/anncwb/vue-vben-admin) - full version
-- [vue-vben-admin-thin-next](https://github.com/anncwb/vben-admin-thin-next) - Simplified version
-
-## How to contribute
-
-You are very welcome to join！[Raise an issue](https://github.com/anncwb/vue-vben-admin/issues/new/choose) or submit a Pull Request。
-
-**Pull Request:**
-
-1. Fork code!
-2. Create your own branch: `git checkout -b feat/xxxx`
-3. Submit your changes: `git commit -am 'feat(function): add xxxxx'`
-4. Push your branch: `git push origin feat/xxxx`
-5. submit`pull request`
-
-## Git Contribution submission specification
-
-- reference [vue](https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md) specification ([Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))
-
-  - `feat` Add new features
-  - `fix` Fix the problem/BUG
-  - `style` Modify the code style/format that does not affect the feature
-  - `perf` Optimization/performance improvement
-  - `refactor` Refactor
-  - `revert` Undo edit
-  - `test` Test related
-  - `docs` Documentation/notes
-  - `chore` Dependency update/scaffolding configuration modification etc.
-  - `workflow` Workflow improvements
-  - `ci` Continuous integration
-  - `types` Type definition file changes
-  - `wip` In development
-
-## Related warehouse
-
-If these plugins are helpful to you, you can show support by leaving a star!
-
-- [vite-plugin-mock](https://github.com/anncwb/vite-plugin-mock) - Used for local and development environment data mock
-- [vite-plugin-html](https://github.com/anncwb/vite-plugin-html) - Used for html template conversion and compression
-- [vite-plugin-compression](https://github.com/anncwb/vite-plugin-compression) - Used to pack input .gz|.brotil files
-- [vite-plugin-svg-icons](https://github.com/anncwb/vite-plugin-svg-icons) - Used to quickly generate svg sprite
-
-## Browser support
-
-The `Chrome 80+` browser is recommended for local development
-
-Support modern browsers, doesn't include IE
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| :-: | :-: | :-: | :-: | :-: |
-| not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
-
-## Maintainer
-
-[@Vben](https://github.com/anncwb) [@Jinmao](https://github.com/jinmao88)
-
-## Thanks
-
-<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." height="120">
-
-## Star History Chart
-
-[![Star History Chart](https://api.star-history.com/svg?repos=vbenjs/vue-vben-admin&type=Date)](https://star-history.com/#vbenjs/vue-vben-admin&Date)
-
-## License
-
-[MIT © Vben-2020](./LICENSE)
+如有问题或建议，请通过以下方式联系：
+- 提交 Issue
+- [联系我们](http://192.168.2.202:5666/contact.html)
